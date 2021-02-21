@@ -95,8 +95,10 @@
         android:id="@+id/descriptionTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
         android:layout_marginTop="60dp"
         android:text="Description"
-        app:layout_constraintTop_toBottomOf="@+id/rateTV"
-        tools:layout_editor_absoluteX="26dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rateTV" />
 </androidx.constraintlayout.widget.ConstraintLayout>

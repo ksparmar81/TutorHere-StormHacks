@@ -6,7 +6,7 @@ public class Tutors {
 
     String name;
     String email;
-    int phone;
+    String phone;
     String title;
     int rate;
     int[] availability;
@@ -25,7 +25,7 @@ public class Tutors {
         this.description = description;
     }
 
-    public Tutors(String name, String email, int phone, String title, int rate, Boolean math, Boolean science, Boolean english, Boolean socials, String description) {
+    public Tutors(String name, String email, String phone, String title, int rate, Boolean math, Boolean science, Boolean english, Boolean socials, String description) {
         this.name = name;
         this.email = email;
         this.phone = phone;
@@ -47,7 +47,7 @@ public class Tutors {
         return email;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
@@ -87,7 +87,7 @@ public class Tutors {
         this.email = email;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
