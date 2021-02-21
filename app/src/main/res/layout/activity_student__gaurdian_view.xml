@@ -6,4 +6,125 @@
     android:layout_height="match_parent"
     tools:context=".Student_GaurdianView">
 
+    <TextView
+        android:id="@+id/subjectTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="Subject(s)"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/subjectBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/subjectBtn" />
+
+    <TextView
+        android:id="@+id/times_daysTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="Days"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/daysBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/daysBtn" />
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginRight="149dp"
+        android:text="View Tutors"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressTV" />
+
+    <TextView
+        android:id="@+id/locationTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="Location"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/locationBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/locationBtn" />
+
+    <TextView
+        android:id="@+id/rangeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:text="Range"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rangeSeekBar" />
+
+    <SeekBar
+        android:id="@+id/rangeSeekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="222dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:max="3"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rangeTv"
+        app:layout_constraintTop_toBottomOf="@+id/locationBtn" />
+
+    <TextView
+        android:id="@+id/progressTV"
+        android:layout_width="198dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:text="0 km from location"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/rangeSeekBar"
+        app:layout_constraintStart_toStartOf="@+id/rangeSeekBar"
+        app:layout_constraintTop_toBottomOf="@+id/rangeSeekBar" />
+
+    <Button
+        android:id="@+id/subjectBtn"
+        android:layout_width="224dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="SELECT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/daysBtn"
+        android:layout_width="222dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Select Days"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjectBtn" />
+
+    <Button
+        android:id="@+id/locationBtn"
+        android:layout_width="221dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="Current Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daysBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

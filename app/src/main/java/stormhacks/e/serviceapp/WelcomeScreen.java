@@ -35,6 +35,7 @@ public class WelcomeScreen extends AppCompatActivity {
         setUpContinueButton();
     }
 
+
     private void launchAnimation() {
         ImageView animation = (ImageView)findViewById((R.id.imageView));
         TextView animText = (TextView)findViewById(R.id.titleTextView);

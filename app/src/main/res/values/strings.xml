@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">ServiceApp</string>
+    
+    <string-array name="subjects">
+        <item>Math</item>
+        <item>English</item>
+        <item>Science</item>
+        <item>Social Science</item>
+        <item>All</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+
 </resources>
