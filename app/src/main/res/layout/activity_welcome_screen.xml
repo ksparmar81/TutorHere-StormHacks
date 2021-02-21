@@ -17,10 +17,10 @@
         android:layout_marginEnd="272dp"
         android:layout_marginRight="272dp"
         android:background="#00AA00FF"
-        android:text="Tutor"
+        android:text="TutorHere"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="36sp"
-        app:fontFamily="sans-serif-smallcaps"
+        app:fontFamily="@font/carter_one"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

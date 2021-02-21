@@ -36,6 +36,18 @@ public class Student_GaurdianView extends AppCompatActivity {
         setSubjects();
         setDays();
         setRange();
+        setUpViewResultsButton();
+    }
+
+    private void setUpViewResultsButton() {
+        Button btn = (Button)findViewById(R.id.searchBtn);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = ServiceDetailsUserInput.makeLaunchIntent(Student_GaurdianView.this);
+                startActivity(i);
+            }
+        });
     }
 
     private void setSubjects(){
@@ -102,7 +114,6 @@ public class Student_GaurdianView extends AppCompatActivity {
 
     private void setDays(){
         daysBtn = (Button)findViewById(R.id.daysBtn);
-
 
         daysBtn.setOnClickListener(new View.OnClickListener() {
             @Override
